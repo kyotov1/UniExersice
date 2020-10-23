@@ -1,0 +1,7 @@
+D:\4.Excersice\Uni\UniExercise\UniExercise\bin\Debug\UniExercise.exe.config
+D:\4.Excersice\Uni\UniExercise\UniExercise\bin\Debug\UniExercise.exe
+D:\4.Excersice\Uni\UniExercise\UniExercise\bin\Debug\UniExercise.pdb
+D:\4.Excersice\Uni\UniExercise\UniExercise\obj\Debug\UniExercise.csprojAssemblyReference.cache
+D:\4.Excersice\Uni\UniExercise\UniExercise\obj\Debug\UniExercise.exe
+D:\4.Excersice\Uni\UniExercise\UniExercise\obj\Debug\UniExercise.pdb
+D:\4.Excersice\Uni\UniExercise\UniExercise\obj\Debug\UniExercise.csproj.CoreCompileInputs.cache
