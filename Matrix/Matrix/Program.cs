@@ -61,5 +61,10 @@ namespace Matrix
             }
             PrintMatr(matr);
         }
+        
+        static void Task3()
+        {
+            
+        }
     }
 }
