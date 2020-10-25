@@ -8,7 +8,10 @@ namespace Classes
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            
+            Task1();
+        }
+        static void Task1()
+        {
 
         }
     }
