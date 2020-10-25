@@ -18,9 +18,8 @@ namespace Matrix
         static void Main(string[] args)
         {
 
-
-            Task1();
             Task2();
+            Task1();            
         }
         /// <summary>
         /// Матрицы. Индексы элементов матриц
@@ -64,7 +63,25 @@ namespace Matrix
         
         static void Task3()
         {
-            
+            char[][][] ch = {
+                new char[][] {   new char[] { 'a', 'b' },
+                                 new char[] { 'c', 'd' },
+                                 new char[] { 'e','f'} },
+                 new char[] []{  new char[] { 'g','h','i'},
+                                 new char[] { 'j','k'} },
+                  new char[][] { new char[] {'l','m' }, new char[] { 'n','o'}  },
+                  new char[][] { new char[] {'p','q' }, new char[] { 'r','s'}  },
+            };
+            Console.WriteLine("RAnk " + ch.Rank);
+            Console.WriteLine("ch[0] rank "+ch[0].Rank);
+            Console.WriteLine("ch[0][0] rank " + ch[0][0].Rank);
+            Console.WriteLine("Type " + ch.GetType());
+            Console.WriteLine("ch[1][2][3] " +ch[1][1][2]);
+            Console.WriteLine("lenth" +ch.Length);
+            Console.WriteLine("lenth(0)" +ch.GetLength(0));
+            Console.WriteLine(ch[1].GetLength(0) + "ch[1].GEt lenth(0)" );
+
+
         }
     }
 }
