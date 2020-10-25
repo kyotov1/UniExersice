@@ -30,6 +30,7 @@ namespace Matrix
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
+            Task6();
             Task5();
             Task4();
             Task3();
@@ -135,6 +136,10 @@ namespace Matrix
             } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
         }
         static void Task5()
+        {
+
+        }
+        static void Task6()
         {
 
         }
