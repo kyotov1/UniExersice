@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Matrix
 {
@@ -17,7 +18,8 @@ namespace Matrix
         }
         static void Main(string[] args)
         {
-
+            Console.OutputEncoding = Encoding.UTF8;
+            Task3();
             Task2();
             Task1();            
         }
@@ -76,12 +78,26 @@ namespace Matrix
             Console.WriteLine("ch[0] rank "+ch[0].Rank);
             Console.WriteLine("ch[0][0] rank " + ch[0][0].Rank);
             Console.WriteLine("Type " + ch.GetType());
-            Console.WriteLine("ch[1][2][3] " +ch[1][1][2]);
+            Console.WriteLine("ch[1][2][3] " +ch[1][1][1]);
             Console.WriteLine("lenth" +ch.Length);
             Console.WriteLine("lenth(0)" +ch.GetLength(0));
-            Console.WriteLine(ch[1].GetLength(0) + "ch[1].GEt lenth(0)" );
+            Console.WriteLine(ch[1].GetLength(0) + " __ch[1].GEt lenth(0)" );
+            Console.WriteLine(ch[1][0].GetLength(0));
 
-
+            foreach(char[][] memb1 in ch)
+            {
+                Console.WriteLine("Level 1:");
+                foreach(char[] memb2 in memb1)
+                {
+                    Console.Write("\tLevel 2:\t");
+                    foreach(char memb3 in memb2)
+                    {
+                        Console.Write("{0,3}", memb3);
+                    }
+                    Console.WriteLine();
+                }
+            }
+           
         }
     }
 }
