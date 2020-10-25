@@ -8,7 +8,7 @@ namespace Classes
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Console.WriteLine();   
+            
 
         }
     }
