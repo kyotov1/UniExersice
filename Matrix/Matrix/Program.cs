@@ -30,6 +30,7 @@ namespace Matrix
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
+            Task5();
             Task4();
             Task3();
             Task2();
