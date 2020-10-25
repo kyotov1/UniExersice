@@ -133,6 +133,10 @@ namespace Matrix
                 Console.WriteLine("Esc for exit");
             } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
         }
+        static void Task5()
+        {
+
+        }
 
     }
 }
