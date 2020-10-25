@@ -12,6 +12,17 @@ namespace Matrix
 
                 for (int col = 0; col < matr.GetLength(1); col++)
                 {
+                    Console.Write("{0,6}", matr[row, col]);
+                }
+            }
+        }
+        static void PrintMatr(uint[,] matr)
+        {
+            for (int row = 0; row < matr.GetLength(0); row++, Console.WriteLine())
+            {
+
+                for (int col = 0; col < matr.GetLength(1); col++)
+                {
                     Console.Write("{0,3}", matr[col, row]);
                 }
             }
@@ -19,6 +30,7 @@ namespace Matrix
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
+            Task4();
             Task3();
             Task2();
             Task1();            
@@ -99,5 +111,28 @@ namespace Matrix
             }
            
         }
+        
+        static void Task4()
+        {
+            do
+            {
+                uint N, M;
+                do Console.Write("N=");
+                while (!uint.TryParse(Console.ReadLine(), out N)|| N==0);
+                do Console.Write("M=");
+                while (!uint.TryParse(Console.ReadLine(), out M)|| M==0);
+                var matrix = new int[N, M];
+                for (int i = 0; i < N; i++)
+                    for (int j = 0; j < M; j++)
+                        matrix[i, j] = (i + 1) * (2 * j + 1);
+
+                
+                Console.WriteLine("Rank: "+matrix.Rank);
+                Console.WriteLine("Length: "+matrix.Length);
+                PrintMatr(matrix);
+                Console.WriteLine("Esc for exit");
+            } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
+        }
+
     }
 }
