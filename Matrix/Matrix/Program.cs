@@ -30,10 +30,10 @@ namespace Matrix
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Task6();
+            /*Task6();
             Task5();
             Task4();
-            Task3();
+            Task3();*/
             Task2();
             Task1();            
         }
@@ -65,17 +65,17 @@ namespace Matrix
         static void Task2()
         {
             int N;
-            do Console.Write("Write N");
+            do Console.Write("Write N: ");
             while (!int.TryParse(Console.ReadLine(), out N));
             var matr = new int[N, N];
-            for (int row = 0; row < N; row++)
+            for (int row = 0; row < N; row++, Console.WriteLine())
             {
                 for (int col = 0; col < N; col++)
                 {
-                    matr[col, row] = (col + row) % N + 1;
+                   Console.Write("{0,3}", matr[col, row] = (col + row) % N + 1);
                 }
             }
-            PrintMatr(matr);
+          //  PrintMatr(matr);
         }
         
         static void Task3()
