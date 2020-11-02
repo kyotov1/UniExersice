@@ -11,7 +11,10 @@ namespace Classes
        static string pa = @"http://ww17.kiril.com";
         static void Main(string[] args)
         {
-
+            int time = Hour();
+            Console.WriteLine(rnd().);
+            Console.WriteLine(Hour().);
+            /*
             var uri = new Uri("http://ww17.kiril.com");
             
             string path = uri.AbsolutePath;
@@ -23,7 +26,7 @@ namespace Classes
             Console.WriteLine(scheme);
             if(path.Length<=1)
                 path="no path";
-            Console.WriteLine(path);
+            Console.WriteLine(path);*/
 
             
             Console.ReadLine();
@@ -32,6 +35,15 @@ namespace Classes
         {
             Console.WriteLine(  );
             Console.WriteLine();
+        }
+        static int Hour()
+        {
+            DateTime dt = DateTime.Now;
+            return dt.Hour;
+        }
+        static Random rnd()
+        {
+            return new Random();
         }
 
     }
