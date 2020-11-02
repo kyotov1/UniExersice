@@ -6,6 +6,7 @@ namespace pascal
     {
         static void Main(string[] args)
         {
+            
             Task();
             int n;
             do Console.Write("Enter n");
