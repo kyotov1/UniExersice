@@ -8,12 +8,24 @@ namespace Classes
 {
     class Program
     {
-       static string pa = @"http://ww17.kiril.com";
+        public void Count(int inVal)
+        {
+            Console.WriteLine("Вход: {0}", inVal);
+            if (inVal == 0) return; 
+            Count(inVal - 1); // Рекурсивный вызов
+            Console.WriteLine("Выход: {0}", inVal);
+        }
+
+            long AddValues(long a, long b) { return a + b; }
+     
+        static string pa = @"http://ww17.kiril.com";
         static void Main(string[] args)
         {
+            Program pr = new Program();
+            pr.Count(3);
             int time = Hour();
-            Console.WriteLine(rnd().);
-            Console.WriteLine(Hour().);
+            Console.WriteLine(rnd());
+            Console.WriteLine(Hour());
             /*
             var uri = new Uri("http://ww17.kiril.com");
             
