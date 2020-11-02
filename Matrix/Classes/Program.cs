@@ -30,7 +30,9 @@ namespace Classes
         }
         static void Task1()
         {
-
+            Console.WriteLine(  );
+            Console.WriteLine();
         }
+
     }
 }
