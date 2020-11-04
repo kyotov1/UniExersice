@@ -31,7 +31,7 @@ namespace Matrix
         {
             Console.OutputEncoding = Encoding.UTF8;
            // Task6();
-            Task5();
+           Task5();
             /*Task4();
             Task3();*/
             Task2();
@@ -155,9 +155,9 @@ namespace Matrix
                 }
                 else
                 {
-                    for (int j = n - 1; i >= 0; --i)
+                    for (int j = n - 1; j >= 0; j--)
                     {
-                      //  matrix[j, i] = value++;
+                        matrix[j, i] = value++;
                     }
                 }
             }
