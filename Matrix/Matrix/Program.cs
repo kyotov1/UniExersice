@@ -30,9 +30,9 @@ namespace Matrix
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            /*Task6();
+           // Task6();
             Task5();
-            Task4();
+            /*Task4();
             Task3();*/
             Task2();
             Task1();            
@@ -138,7 +138,30 @@ namespace Matrix
         }
         static void Task5()
         {
-
+           
+            int n;
+            int value = 1;
+            do { Console.Write("Enter n: "); }
+            while (!int.TryParse(Console.ReadLine(), out n));
+            var matrix = new int[n, n];
+            for(int i=0; i<n;i++)
+            {
+                if(i%2==0)
+                {
+                    for(int j=0; j<n;j++)
+                    {
+                        matrix[j, i] = value++;
+                    }
+                }
+                else
+                {
+                    for (int j = n - 1; i >= 0; --i)
+                    {
+                      //  matrix[j, i] = value++;
+                    }
+                }
+            }
+            PrintMatr(matrix);
         }
         static void Task6()
         {
