@@ -35,12 +35,30 @@ namespace Class
             }
             public override string ToString()
             {
-                return $"Telefone {name}; Model {model}; weight {weight} g.; diagonal {diagonal} inch ";
+                return $"Telefone {name}; Model {model}; weight {weight} g.; diagonal {diagonal:f2} inch ";
             }
 
         }
         static void Main(string[] args)
         {
+            Console.WriteLine($"a={1.56879134:f3}; a={1.56879134:f3};a={1.56879134:f3}");
+            double rmin;
+            double rmax;
+            double delta;
+            do { Console.Write("rmin: "); }
+            while (!double.TryParse(Console.ReadLine(), out rmin));
+            do { Console.Write("rmax: "); }
+            while (!double.TryParse(Console.ReadLine(), out rmax));
+            do { Console.Write("delta: "); }
+            while (!double.TryParse(Console.ReadLine(), out delta));
+            Circlecs circle = new Circlecs();
+
+            for(double i=rmin; i<rmax; i+=delta)
+            {
+                circle._R = i;
+                Console.WriteLine(circle.ToString());
+            }
+
             Telefone t1 = new Telefone("Samsung", "A20",1630, 6);
             //t1.Weight = 1600;
             Console.WriteLine(t1.ToString());
